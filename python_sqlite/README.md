@@ -1,0 +1,1 @@
+- This repo consist of python script that connect to a SQlite database and perform CRUD operations on a simple table for student information.
