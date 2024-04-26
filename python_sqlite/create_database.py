@@ -2,6 +2,7 @@
 
 import sqlite3
 
+
 def create_database():
     try:
         sqliteConnection = sqlite3.connect('backend_student_info.db')

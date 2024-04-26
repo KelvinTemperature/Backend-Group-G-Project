@@ -18,7 +18,7 @@ def main():
         print("5. Update Table")
         print("6. Delete Table")
         print("7. Quit")
-        
+
         print("\n")
         option = int(input("Enter your option: "))
         print("\n")
@@ -33,8 +33,14 @@ def main():
             last_name = input("Enter last_name: ")
             phone = input("Enter phone: ")
             email = input("Enter email: ")
-            
-            insert_student_details(student_id, first_name, last_name, phone, email)
+
+            insert_student_details(
+                    student_id,
+                    first_name,
+                    last_name,
+                    phone,
+                    email
+                   )
         elif option == 4:
             read_table()
         elif option == 5:

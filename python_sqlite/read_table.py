@@ -10,7 +10,7 @@ def read_table():
         print("----------------------------------------------")
         print("| Connected to backend_student_info database |")
         print("----------------------------------------------")
-        
+
         sqlite_select_query = """SELECT * from student_information"""
         cursor.execute(sqlite_select_query)
         records = cursor.fetchall()
@@ -24,12 +24,12 @@ def read_table():
             print("phone: ", row[3])
             print("email: ", row[4])
             print("----------------------------------------------")
-        
+
         cursor.close()
-    
+
     except sqlite3.Error as error:
         print("Failed to read data from backend_student_info database", error)
-    
+
     finally:
         if (sqliteConnection):
             sqliteConnection.close()
