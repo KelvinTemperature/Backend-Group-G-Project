@@ -63,6 +63,8 @@ def main():
                 print("Invalid option, Please try again.")
 
         elif option == 6:
+            read_table()
+            print("\n=== Delete student details via their ID ===")
             student_id = int(input("Enter student_id: "))
             delete_student_details(student_id)
         elif option == 7:
